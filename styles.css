@@ -1,0 +1,60 @@
+#logoBar {
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+#siteLogo {
+  width: 100%;
+}
+body {
+  display: flex;
+  background-color: beige;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #4b2d0b;
+  flex-direction: column;
+  align-items: center;
+}
+#staffGallery {  
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+}
+.galleryImage {
+  width: 100%;
+  height: auto;
+  height: 300px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
+  background-color: rgb(204, 237, 226);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  #logoBar {
+    width: 30vw;
+    height: 100vh;
+  }
+  #staffGallery {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+  }
+}
